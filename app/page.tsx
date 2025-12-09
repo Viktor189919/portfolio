@@ -1,11 +1,15 @@
-
+import MainLayout from "@/components/MainLayout";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-       
-      </main>
+    <div className="w-full flex flex-col min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+      <MainLayout>
+        <main className="h-full flex justify-center items-center">
+          <h1 className="text-3xl font-bold">
+            Hello, <br /> my name is Viktor <br/> welcome to my portfolio.
+          </h1>
+        </main>
+      </MainLayout>
     </div>
   );
 }
