@@ -5,7 +5,7 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
   return (
     <div className="w-full h-full min-h-screen flex flex-col">
       <Header />
-      <main className="flex-1 w-full flex items-center justify-center">
+      <main className="flex-1 w-full flex items-center justify-center pt-20 pb-20">
         {children}
       </main>
       <Footer />

@@ -16,8 +16,8 @@ export default function Header() {
 
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm w-screen">
-      <div className="flex items-center justify-center px-8 py-6 relative w-full">
+    <header className="fixed top-0 left-0 right-0 h-20 z-50 bg-white shadow-md">
+      <div className="h-full flex items-center justify-center px-8 relative w-full">
         <h1 className="text-2xl font-bold text-gray-900 sm:absolute sm:left-8 mr-auto">Viktor G</h1>
         <DropdownMenu>
           <DropdownMenuTrigger className="sm:hidden cursor-pointer">
@@ -39,7 +39,7 @@ export default function Header() {
           </DropdownMenuContent>
 
         </DropdownMenu>
-        <ul className="gap-8 sm:flex hidden">
+        <ul className="gap-8 lg:ml-0 sm:flex sm:ml-auto hidden">
           <li 
             onClick={() => router.push("/")}
             className="cursor-pointer text-gray-700 hover:text-gray-900 hover:underline transition-colors duration-200 font-medium"

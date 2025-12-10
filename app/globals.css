@@ -3,6 +3,10 @@
 
 @custom-variant dark (&:is(.dark *));
 
+:root {
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
 html, body, #__next {
   height: 100%;
   margin: 0;
